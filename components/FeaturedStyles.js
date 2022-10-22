@@ -10,7 +10,7 @@ export default function () {
 
     return (
         
-        <div className=''>
+        <div className='' >
             <ul>    
                 <div className='grid grid-cols-3 '>
                     {FeaturedStylesInfo.map((info) => {
@@ -22,7 +22,7 @@ export default function () {
                                     <div className='cursor-pointer opacity-95  bg-fuchsia-200 p-3 rounded-3xl hover:scale-[1.1] hover:bg-fuchsia-300 hover:opacity-100'>
                                         <div className=''>
                                             <OverlayTrigger
-                                            placement="right"
+                                            placement="bottom"
                                             overlay={
                                                 <Tooltip>
                                                     {info.title}

@@ -1,31 +1,26 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import FeaturedStyles from '../components/FeaturedStyles'
-import Footer from '../components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AboutSalon from '../components/AboutSalon';
+import AboutOwner from '../components/AboutOwner';
 
 export default function Home() {
   return (
-    <div>
+    <div className='' >
 
       <Head>
-        <title>Beauty Salon App</title>
+        <title>Beauty Salon Website</title>
         <meta className="description" content="Travis Flake" />
           <link rel="icon" href="/favicon.ico" />
       </Head>
       
       
-      <main className='grid justify-center gap'>
-        <div className='grid justify-center' >
-           <h1 className=''>Book Your Appointment Today!</h1>
-        </div>
+      <main className='grid justify-center relative' >
+        <AboutSalon />
+        <AboutOwner />
        
-         <FeaturedStyles />
+        
       </main>
 
-      <footer className='bg-slate-800 text-white mt-14 h-40'>
-       <Footer />
-      </footer>
     </div>
     
   )
